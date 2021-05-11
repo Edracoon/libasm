@@ -3,7 +3,6 @@ section .text
 	extern ___error
 
 _ft_write:
-	mov r8,rdx
 	mov rax,0x2000004
 	syscall
 	jc error
@@ -15,5 +14,4 @@ error:
 	mov rax,-1
 	ret
 return:
-	mov rax,r8
 	ret

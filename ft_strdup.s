@@ -5,8 +5,6 @@ extern _ft_strcpy
 extern _malloc
 
 _ft_strdup:
-	mov rcx,0
-boucle_cpy:
 	push rdi
 	call _ft_strlen
 	inc rax
